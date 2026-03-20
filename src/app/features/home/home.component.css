@@ -20,7 +20,7 @@
 .rowposter{
     display: flex;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 .rowimg {
