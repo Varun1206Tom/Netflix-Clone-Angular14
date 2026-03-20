@@ -20,7 +20,6 @@ export class MovieDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     let getParamId = this.route.snapshot.paramMap.get('id');
-    console.log("GetParamID :", getParamId);
     this.getMovieDetails(getParamId);
     this.getVideo(getParamId);
     this.getCast(getParamId);
