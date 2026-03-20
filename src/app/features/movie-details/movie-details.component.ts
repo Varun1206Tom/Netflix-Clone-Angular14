@@ -27,7 +27,6 @@ export class MovieDetailsComponent implements OnInit {
 
   getMovieDetails(id: any){
     this.service.getMovieDetails(id).subscribe((res) => {
-      console.log("Movie details :",res);
       this.movieDetailsResult = res;
     })
   }
@@ -45,7 +44,6 @@ export class MovieDetailsComponent implements OnInit {
 
   getCast(id: any){
     this.service.getMovieCast(id).subscribe((res) => {
-      console.log("Movie Cast :",res);
       this.movieCastResult = res.cast;
     })
   }
